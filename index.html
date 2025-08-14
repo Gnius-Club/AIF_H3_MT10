@@ -1,24 +1,282 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playbook — 3º Preparatoria — Misión M10: Auditoría Frontend</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
+  <header>
+    <h1><span class="book-icon">📋</span> <strong>Playbook Misión M10: Auditoría Frontend</strong></h1>
+    <div class="header-widgets">
+      <div class="timer-container">
+        <span id="timer">⏱️ 00:00</span>
+        <button id="startStop">Start</button>
+        <button id="reset">Reset</button>
+      </div>
+      <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle-input">
+          <span class="slider round"></span>
+        </label>
+        <i class="fas fa-moon"></i>
+      </div>
+    </div>
+  </header>
+  <div class="main-container">
+    <aside class="activity-list">
+      <h2>Actividades</h2>
+      <ul>
+        <li><a href="#activity-0">📝</a></li>
+        <li><a href="#activity-1">1</a></li>
+        <li><a href="#activity-2">2</a></li>
+        <li><a href="#activity-3">3</a></li>
+        <li><a href="#activity-4">4</a></li>
+        <li><a href="#activity-5">5</a></li>
+      </ul>
+      <div class="sidebar-info">
+        <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+        <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+      </div>
+    </aside>
+    <main class="content">
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+      <!-- 0) De un Vistazo -->
+      <section class="activity-card" id="activity-0">
+        <h2 class="activity-title">📝 De un Vistazo: Misión M10: Auditoría Frontend</h2>
+        <p class="activity-purpose">Resumen de objetivos, secuencia y entregables.</p>
+        <div class="overview">
+          <section class="overview-block">
+            <h3>Objetivos e “I Can”</h3>
+            <ul>
+              <li>Puedo aplicar criterios de legibilidad, mantenibilidad y buenas prácticas para auditar código frontend generado por IA.</li>
+              <li>Puedo identificar "code smells" e ineficiencias en el código y justificar su impacto a largo plazo.</li>
+            </ul>
+          </section>
+          <section class="overview-block">
+            <h3>Secuencia y tiempos</h3>
+            <ol>
+              <li>Saludo Interactivo con IA — 3 min</li>
+              <li>“I Can” + Desafío — 5–7 min</li>
+              <li>AI GYM — 10–12 min</li>
+              <li>Brain Spark — 17–20 min</li>
+              <li>GNIUS STORM — 5 min</li>
+            </ol>
+          </section>
+          <section class="overview-block">
+            <h3>Entregable del Micro-Proyecto</h3>
+            <ul>
+              <li>Reporte de Auditoría: 3 comentarios (1 positivo, 2 de mejora con justificación) directamente en el código de CodePen/JSFiddle.</li>
+            </ul>
+          </section>
+          <section class="overview-block">
+            <h3>Criterios de calidad</h3>
+            <ul>
+              <li>Claridad en la identificación de aspectos positivos y áreas de mejora.</li>
+              <li>Justificación lógica y técnica del impacto de los "code smells" o ineficiencias.</li>
+              <li>Aplicación de principios de legibilidad y mantenibilidad en la auditoría.</li>
+              <li>Uso adecuado de la plataforma CodePen/JSFiddle para comentar el código.</li>
+            </ul>
+          </section>
+          <section class="overview-block">
+            <h3>Materiales y preparación</h3>
+            <ul>
+              <li>Proyector e internet</li>
+              <li>CodePen / JSFiddle (con acceso a los proyectos de la M09)</li>
+              <li>Herramientas de desarrollo del navegador (DevTools)</li>
+              <li>Ejemplo mínimo de "code smell" o ineficiencia para demostración.</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <!-- 1) Saludo Interactivo con IA -->
+      <section class="activity-card" id="activity-1">
+        <h2 class="activity-title">Saludo Interactivo con IA</h2>
+        <p class="activity-purpose">Enmarcar el foco (auditoría de código, calidad) y activar a Xolo con perfil/intereses.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
+              <p class="step-instructions">Proyectar Diapositiva 2. Presenta el tema y su valor profesional (Auditoría de Código).</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Equipo: hoy daremos un paso crucial en su rol de directores. No solo crearemos, sino que auditaremos. Aprenderemos a revisar la calidad del código, un pilar fundamental para proyectos sostenibles y escalables. Pasaremos de ser solo creadores a ser también críticos y estrategas de la calidad.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Activación con Xolo</h3>
+              <p class="step-instructions">Cada estudiante envía a Xolo: “Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Misión M10: Auditoría Frontend. Necesito foco en auditoría de código y calidad.”</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Activen a Xolo con su perfil e intereses. Confirmen que comprendieron el criterio de hoy y sigan sus indicaciones personalizadas para la auditoría de código.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- 2) “I Can” + Desafío -->
+      <section class="activity-card" id="activity-2">
+        <h2 class="activity-title">“I Can Statement” + Desafío</h2>
+        <p class="activity-purpose">Alinear expectativas y definir el reto de la auditoría de código.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Presenta el reto</h3>
+              <p class="step-instructions">Proyectar Diapositiva 3. Describe el reto de auditar código y la meta observable.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">El reto de hoy es convertirse en un "Auditor de Calidad de Código". Revisarán su propio trabajo de la misión anterior (M09), identificando no solo lo que funciona, sino cómo de bien está construido. El objetivo es entregar un reporte de auditoría conciso y justificado.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Escribe tu “I Can”</h3>
+              <p class="step-instructions">Proyectar Diapositiva 4. Cada estudiante redacta 1 “I Can” alineado al entregable.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Formula tu “Puedo…” en 1 frase: acción + criterio + resultado. Por ejemplo: "Puedo auditar código frontend usando criterios de legibilidad para identificar áreas de mejora y justificar su impacto."</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- 3) AI GYM -->
+      <section class="activity-card" id="activity-3">
+        <h2 class="activity-title">AI GYM</h2>
+        <p class="activity-purpose">Formalizar el marco de auditoría de código y las buenas prácticas.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Marco del día</h3>
+              <p class="step-instructions">Proyectar Diapositiva 5. Introduce el marco de Auditoría y calidad de código frontend. Explica legibilidad, mantenibilidad y buenas prácticas. Menciona "code smells" y su impacto.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Hoy, Xolo cambia de rol: de creador a auditor. Un director no solo manda a hacer, sino que revisa la calidad. Nos enfocaremos en legibilidad, mantenibilidad y buenas prácticas. Un 'code smell' es una señal de que algo podría estar mal, como nombres de variables poco claros o selectores CSS demasiado específicos. Evitar estos problemas a largo plazo reduce la deuda técnica y facilita el trabajo en equipo.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Mini-demostración</h3>
+              <p class="step-instructions">Proyectar Diapositiva 6. Muestra un ejemplo de código (idealmente de M09) e identifica un "code smell" o ineficiencia, explicando el porqué.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Observen este fragmento de código. Aquí, la variable `x` es un 'code smell' porque no es legible; debería llamarse `userCount`. O este selector CSS `div > p.text-red`, es demasiado específico y frágil. Estos pequeños detalles afectan la mantenibilidad y escalabilidad del proyecto. Verifiquen si su código tiene estos patrones.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 3 — Check rápido</h3>
+              <p class="step-instructions">Proyectar Diapositiva 7. Dos preguntas de verificación sobre la importancia de la calidad de código.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Pregunta 1: ¿Por qué es importante la mantenibilidad en un proyecto de software? Pregunta 2: Menciona un ejemplo de "code smell" que recuerdes.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- 4) Brain Spark -->
+      <section class="activity-card" id="activity-4">
+        <h2 class="activity-title">Brain Spark</h2>
+        <p class="activity-purpose">Producir el reporte de auditoría sobre el código de la misión anterior.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Producción</h3>
+              <p class="step-instructions">Proyectar Diapositiva 8. Revisa tu trabajo de la M09. Crea un "Reporte de Auditoría" con 3 comentarios directamente en tu código de CodePen/JSFiddle: uno identificando algo bien hecho, y dos identificando áreas de mejora con su justificación. Tiempo de trabajo autónomo.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">N/A</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Iteración</h3>
+              <p class="step-instructions">Proyectar Diapositiva 9. Con tu análisis, puedes: refactorizar el código para corregir un punto, escribir un prompt para que la IA lo refactorice, o crear una pequeña checklist de calidad para futuros proyectos.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+            <div class="collapsible-content">
+              <p class="dialogue assistant">Antes de cerrar: valida que tus comentarios sean claros y que la justificación de las mejoras sea sólida. Piensa en cómo aplicarías esto en un proyecto real.</p>
+            </div>
+          </div>
+        </article>
+        <article class="step-card">
+          <div class="step-content">
+            <h3 class="step-title">Paso 3 — Evidencia</h3>
+            <p class="step-instructions">Proyectar Diapositiva 10. Solicita la URL de tu CodePen/JSFiddle con los comentarios de auditoría.</p>
+          </div>
+          <div class="collapsible">
+            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+            <div class="collapsible-content">
+              <p class="dialogue assistant">Entrega la URL de tu CodePen/JSFiddle. Asegúrate de que los comentarios sean visibles y que tu nombre o equipo esté identificado en el proyecto.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- 5) GNIUS STORM -->
+    <section class="activity-card" id="activity-5">
+      <h2 class="activity-title">GNIUS STORM</h2>
+      <p class="activity-purpose">Showcase de hallazgos de auditoría y cierre ejecutivo.</p>
+      <div class="steps">
+        <article class="step-card">
+          <div class="step-content">
+            <h3 class="step-title">Paso 1 — Showcase relámpago</h3>
+            <p class="step-instructions">2–3 personas/equipos muestran evidencia (30–45 s c/u): hallazgos de auditoría, decisiones de mejora y justificación.</p>
+          </div>
+          <div class="collapsible">
+            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+            <div class="collapsible-content">
+              <p class="dialogue assistant">Enfoca tu presentación en un hallazgo clave de tu auditoría, la mejora propuesta y por qué es importante para la calidad del código.</p>
+            </div>
+          </div>
+        </article>
+        <article class="step-card">
+          <div class="step-content">
+            <h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
+            <p class="step-instructions">Proyectar Diapositiva 11. Síntesis: 1 aprendizaje clave sobre auditoría/calidad, 1 criterio de mayor impacto y 1 siguiente paso aplicable.</p>
+          </div>
+          <div class="collapsible">
+            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+            <div class="collapsible-content">
+              <p class="dialogue assistant">Síntesis: El aprendizaje más valioso hoy fue la importancia de la [legibilidad/mantenibilidad/buenas prácticas]. El criterio que más impactó mi visión fue [criterio]. Como siguiente paso, aplicaré [acción concreta, ej. una checklist de calidad en mis futuros proyectos].</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  </div>
   <script src="script.js"></script>
 </body>
-
 </html>
